@@ -1,0 +1,150 @@
+/* Asosiy sektsiya foni (Figmadagi qora/to'q fon) */
+.hero-section {
+  width: 100%;
+  background-color: #0c0f12; /* Figma blokining umumiy foni */
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+/* Konteyner - Grid orqali responsivlikni boshqarish */
+.hero-container {
+  width: 100%;
+  max-width: 1280px;
+  min-height: 480px;
+  background-color: #14191d; /* Blokning ichki foni */
+  border-radius: 12px;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 1.2fr 1fr; /* Desktopda matn kengroq, rasm sal torroq */
+  align-items: center;
+  position: relative;
+}
+
+/* Chap tomondagi matnlar qismi */
+.hero-text-content {
+  padding: 60px;
+  z-index: 2;
+}
+
+/* Sarlavha - clamp() yordamida responsiv qilingan */
+.hero-title {
+  color: #ffffff;
+  font-size: clamp(2.2rem, 4vw, 4.2rem);
+  font-weight: 800;
+  line-height: 1.1;
+  margin-bottom: 24px;
+}
+
+/* Tavsif matni */
+.hero-desc {
+  color: #b3b9c1;
+  font-size: clamp(14px, 1.2vw, 16px);
+  line-height: 1.6;
+  margin-bottom: 40px;
+  max-width: 480px;
+}
+
+/* Tugma (Button) */
+.hero-cta-btn {
+  background-color: #66d2ce; /* Firuza rang */
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 700;
+  padding: 16px 36px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.hero-cta-btn:hover {
+  background-color: #52b8b4;
+  box-shadow: 0 4px 15px rgba(102, 210, 206, 0.3);
+}
+
+/* O'ng tomondagi rasm wrapper */
+.hero-image-wrapper {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.hero-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* Desktopda <br /> ishlashi uchun, mobilda o'chadi */
+.desktop-break {
+  display: block;
+}
+
+/* ================= RESPONSIVE MEDIA QUERIES ================= */
+
+/* Planshetlar uchun (Ekran 992px dan kichik bo'lganda) */
+@media (max-width: 992px) {
+  .hero-container {
+    grid-template-columns: 1fr; /* Grid bitta ustun bo'lib qoladi */
+    min-height: 500px;
+  }
+
+  .hero-image-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+  }
+
+  /* Rasm matn ostida qolganda qoraytirish effekti */
+  .hero-image-wrapper::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.75); /* Matn oson o'qilishi uchun */
+  }
+
+  .hero-text-content {
+    padding: 40px;
+    max-width: 600px;
+  }
+  
+  .desktop-break {
+    display: none; /* Mobilda sarlavha bitta qatorda chiroyli sinadi */
+  }
+}
+
+/* Mobil telefonlar uchun (Ekran 576px dan kichik bo'lganda) */
+@media (max-width: 576px) {
+  .hero-section {
+    padding: 10px;
+  }
+
+  .hero-text-content {
+    padding: 30px 20px;
+    text-align: center; /* Mobilda matnlarni o'rtaga tekislaymiz */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero-title {
+    margin-bottom: 16px;
+  }
+
+  .hero-desc {
+    margin-bottom: 32px;
+  }
+
+  .hero-cta-btn {
+    width: 100%; /* Mobilda tugma to'liq kenglikda qulayroq bosiladi */
+    max-width: 320px;
+  }
+}
