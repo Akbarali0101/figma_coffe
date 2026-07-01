@@ -1,0 +1,144 @@
+/* Sirtqi umumiy fon */
+.chose-section {
+  width: 100%;
+  padding: 60px 20px 120px 20px; /* Pastki padding kartalar chiqib turishi uchun kattaroq */
+  background-color: #fcfaf7;
+  display: flex;
+  justify-content: center;
+}
+
+/* Markaziy konteyner */
+.chose-container {
+  width: 100%;
+  max-width: 1110px; /* Oldingi blok kengligi bilan bir xil */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* To'q rangli asosiy katta blok */
+.chose-top-card {
+  width: 100%;
+  background-color: #2c343e; /* Figmadagi to'q kulrang/ko'k fon */
+  border-radius: 12px;
+  padding: 64px 40px 200px 40px; /* Pastki padding (200px) ichidagi kartalarga joy ochadi */
+  text-align: center;
+  color: #ffffff;
+}
+
+.chose-title {
+  font-family: 'Fraunces', serif;
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 900;
+  margin-bottom: 24px;
+}
+
+.chose-subtitle {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #b3b9c1;
+  max-width: 540px;
+  margin: 0 auto;
+}
+
+/* Kartalarni o'rab turuvchi qism */
+.chose-benefits-wrapper {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  width: 100%;
+  max-width: 1040px; /* Chekkalardan sal ichkariroqda turishi uchun */
+  margin-top: -140px; /* Kartalarni to'q blok ustiga yarmiga ko'tarish (Minus margin) */
+  padding: 0 20px;
+}
+
+/* Har bir alohida firuza rangli karta */
+.benefit-card {
+  flex: 1;
+  background-color: #0e8784; /* Figmadagi firuza rang */
+  border-radius: 8px;
+  padding: 48px 32px;
+  color: #ffffff;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.benefit-card:hover {
+  transform: translateY(-5px); /* Ustiga kelganda yengil effekt */
+}
+
+/* Ikonka joyi */
+.benefit-icon {
+  font-size: 40px;
+  margin-bottom: 24px;
+}
+
+.benefit-title {
+  font-family: 'Fraunces', serif;
+  font-size: 24px;
+  font-weight: 800;
+  margin-bottom: 16px;
+}
+
+.benefit-desc {
+  font-size: 15px;
+  line-height: 1.6;
+  color: #f4f6f8;
+}
+
+/* ================= RESPONSIVE (MEDIA QUERIES) ================= */
+
+/* Planshetlar uchun (Ekran 992px dan kichik bo'lganda) */
+@media (max-width: 992px) {
+  .chose-top-card {
+    padding-bottom: 280px; /* Kartalar ustma-ust tushganda joy yetishi uchun */
+  }
+
+  .chose-benefits-wrapper {
+    flex-direction: column; /* Kartalar ustma-ust tushadi */
+    gap: 24px;
+    margin-top: -240px; /* Minus marginni planshetga moslash */
+  }
+
+  .benefit-card {
+    flex-direction: row; /* Planshetda rasm chapda matn o'ngda (Agar Figmada shunday bo'lsa) */
+    text-align: left;
+    align-items: center;
+    gap: 24px;
+    padding: 32px;
+  }
+
+  .benefit-icon {
+    margin-bottom: 0;
+  }
+}
+
+/* Mobil telefonlar uchun (Ekran 576px dan kichik bo'lganda) */
+@media (max-width: 576px) {
+  .chose-section {
+    padding: 40px 12px 60px 12px;
+  }
+
+  .chose-top-card {
+    padding: 48px 20px 320px 20px; /* Mobilda fon pastga ko'proq uzayadi */
+  }
+
+  .chose-benefits-wrapper {
+    margin-top: -280px;
+    padding: 0;
+  }
+
+  .benefit-card {
+    flex-direction: column; /* Telefonlarda yana hammasi markazda tikka bo'ladi */
+    text-align: center;
+    padding: 40px 24px;
+  }
+
+  .benefit-icon {
+    margin-bottom: 20px;
+  }
+}
