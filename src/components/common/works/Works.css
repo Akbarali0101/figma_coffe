@@ -5,6 +5,7 @@
   background-color: #fcfaf7;
   display: flex;
   justify-content: center;
+  overflow-x: hidden;
 }
 
 /* Sariq chiziq bilan belgilangan ichki konteyner */

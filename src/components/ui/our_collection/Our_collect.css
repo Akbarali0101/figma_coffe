@@ -5,6 +5,7 @@
   background-color: #fcfaf7; /* Figma umumiy oqish foni */
   display: flex;
   justify-content: center;
+  overflow-x: hidden;
 }
 
 /* Figma ko'k chizig'i o'lchamidagi asosiy konteyner */
