@@ -3,12 +3,15 @@ import Navbar from "../components/common/Navbar";
 import Footer from "../components/common/Footer";
 
 function MainLayout() {
+ 
+
   return (
-    <div>
+    <>
       <Navbar />
       <Outlet />
       <Footer />
-    </div>
+    </>
+
   );
 }
 
