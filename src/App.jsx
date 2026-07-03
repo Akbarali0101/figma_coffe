@@ -5,6 +5,7 @@ import {
 
 import MainLayout from "./layouts/MainLayout";
 import Home from "./pages/Home";
+import Subscribe from "./pages/Subscribe";
 
 const router = createBrowserRouter([
   {
@@ -15,6 +16,10 @@ const router = createBrowserRouter([
         index: true,
         element: <Home />,
       },
+      {
+    path: "Subscribe",
+    element: <Subscribe />,
+  },
     ],
   },
 ]);
