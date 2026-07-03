@@ -1,0 +1,81 @@
+.order-form-container {
+  width: 100%;
+  max-width: 1110px;
+  margin: 0 auto;
+  padding: 60px 20px;
+  box-sizing: border-box;
+}
+
+.order-form-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  margin-bottom: 56px;
+}
+
+.order-form-header h2 {
+  font-family: 'Fraunces', serif;
+  font-size: 32px;
+  color: #838C8B;
+  margin: 0;
+}
+
+.arrow {
+  color: #0E8784;
+  font-size: 24px;
+  transition: transform 0.3s ease;
+  transform: rotate(180deg);
+}
+
+.arrow.open {
+  transform: rotate(0deg);
+}
+
+.order-form-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+  width: 100%;
+}
+
+.order-form-card {
+  background: #F4F1EA;
+  padding: 40px 32px;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  min-height: 190px;
+  display: flex;
+  flex-direction: column;
+}
+
+.order-form-card:hover {
+  background: #FDD6BA;
+}
+
+.order-form-card.active {
+  background: #0E8784;
+}
+
+.order-form-card.active h3, 
+.order-form-card.active p {
+  color: #FFFFFF;
+}
+
+.order-form-card h3 {
+  font-size: 24px;
+  margin-bottom: 24px;
+}
+
+.order-form-card p {
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+@media (max-width: 768px) {
+  .order-form-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}
