@@ -1,0 +1,174 @@
+/* Tashqi umumiy fon */
+.works-section-light {
+  width: 100%;
+  padding: 80px 20px;
+  background-color: #fcfaf7;
+  display: flex;
+  justify-content: center;
+  overflow-x: hidden;
+}
+
+.works-section-dark {
+  background-color: #333d4b;
+}
+
+/* Sariq chiziq bilan belgilangan ichki konteyner */
+.works-container {
+  width: 1045px;
+  max-width: 1110px; /* Oldingi bloklar bilan bir xil kenglik */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Elementlarni chapdan tekislash */
+}
+
+/* Kichik sarlavha */
+.works-top-title {
+  font-family: 'Fraunces', serif;
+  font-size: 24px;
+  color: #83888f;
+  margin-bottom: 80px;
+  font-weight: 900;
+}
+
+/* Progress bar dizayni */
+.works-progress-bar {
+  position: relative;
+  width: 75%; /* Oxirgi aylanagacha bo'lgan masofa */
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 60px;
+}
+
+/* Gorizontal o'tuvchi och sariq/to'q sariq chiziq */
+.progress-line {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 100%;
+  height: 2px;
+  background-color: #fdd6ba; /* Figmadagi chiziq rangi */
+  z-index: 1;
+}
+
+/* Aylanalar */
+.progress-circle {
+  position: relative;
+  width: 31px;
+  height: 31px;
+  border-radius: 50%;
+  border: 2px solid #0e8784; /* Firuza rangli aylana bordery */
+  background-color: #fcfaf7; /* Ichki qismi fon bilan bir xil */
+  z-index: 2;
+}
+
+/* Bosqichlar griddi */
+.works-steps-grid {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  margin-bottom: 60px;
+}
+
+/* Har bir qadam (Karta) */
+.step-item {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+/* Katta raqamlar (01, 02, 03) */
+.step-number {
+  font-family: 'Fraunces', serif;
+  font-size: 72px;
+  font-weight: 900;
+  color: #fdd6ba; /* Och jigar/to'q sariq rang */
+  margin-bottom: 24px;
+  line-height: 1;
+}
+
+/* Qadam sarlavhasi */
+.step-title {
+  font-family: 'Fraunces', serif;
+  font-size: 28px;
+  font-weight: 900;
+  color: #333d4b;
+  margin-bottom: 24px;
+}
+
+/* Qadam matni */
+.step-desc {
+  font-size: 15px;
+  line-height: 1.7;
+  color: #333d4b;
+}
+
+/* Tugma */
+.works-btn {
+  background-color: #0e8784;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 700;
+  padding: 16px 36px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  margin-top: 20px;
+}
+
+.works-btn:hover {
+  background-color: #66d2ce;
+}
+
+/* ================= RESPONSIVE (MEDIA QUERIES) ================= */
+
+/* Planshetlar uchun (992px dan kichik ekranlar) */
+@media (max-width: 992px) {
+  .works-progress-bar {
+    width: 68%; /* Aylanalarni matnga moslab sal toraytiramiz */
+  }
+  
+  .step-title {
+    font-size: 24px;
+  }
+}
+
+/* Mobil telefonlar uchun (768px dan kichik ekranlar) */
+@media (max-width: 768px) {
+  .works-container {
+    align-items: center; /* Mobilda hamma narsa markazga keladi */
+  }
+
+  .works-top-title {
+    margin-bottom: 40px;
+  }
+
+  /* Mobilda tepadagi progress chiziq va aylanalarni o'chirib turamiz */
+  .works-progress-bar {
+    display: none;
+  }
+
+  /* Bloklar yonma-yon emas, ustma-ust tushadi */
+  .works-steps-grid {
+    flex-direction: column;
+    gap: 56px;
+    text-align: center;
+  }
+
+  .step-item {
+    align-items: center; /* Matnlarni o'rtaga tekislaymiz */
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
+  .step-number {
+    margin-bottom: 16px;
+  }
+
+  .step-title {
+    margin-bottom: 16px;
+  }
+}
