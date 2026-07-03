@@ -3,7 +3,6 @@ import "./Our_collect.css";
 
 
 
-
 const Collection = () => {
   // Qahvalar ma'lumotlar bazasi (Real loyihada bu ko'pincha API yoki alohida fayldan keladi)
   const coffees = [
@@ -11,7 +10,7 @@ const Collection = () => {
       id: 1,
       name: 'Gran Espresso',
       desc: 'Light and flavorful blend with cocoa and black pepper for an intense experience',
-      img: './public/img/planalto.png' // public/img/ ichidagi rasm nomi
+      img: './public/img/1.png' // public/img/ ichidagi rasm nomi
     },
     {
       id: 2,
@@ -23,13 +22,13 @@ const Collection = () => {
       id: 3,
       name: 'Piccollo',
       desc: 'Mild and smooth blend featuring notes of toasted almond and dried cherry',
-      img: './public/img/planalto.png'
+      img: './public/img/3.png'
     },
     {
       id: 4,
       name: 'Danche',
       desc: 'Ethiopian hand-harvested blend densely packed with vibrant fruit notes',
-      img: './public/img/planalto.png'
+      img: './public/img/4.png'
     }
   ];
 

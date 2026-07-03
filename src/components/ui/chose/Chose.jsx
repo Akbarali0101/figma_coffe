@@ -4,19 +4,19 @@ const Chose = () => {
   const benefits = [
     {
       id: 1,
-      icon: "☕", // Bu yerga keyinchalik o'z SVG yoki rasmingizni qo'yishingiz mumkin
+      icon: "./public/img/birinchi.svg", // Bu yerga keyinchalik o'z SVG yoki rasmingizni qo'yishingiz mumkin
       title: "Best quality",
       desc: "Discover an endless variety of the world's best artisan coffee from each of our roasters."
     },
     {
       id: 2,
-      icon: "🎁",
+      icon: "./public/img/ikki.svg",
       title: "Exclusive benefits",
       desc: "Special offers and swag when you subscribe, including 30% off your first shipment."
     },
     {
       id: 3,
-      icon: "🚚",
+      icon: "./public/img/logo.svg",
       title: "Free shipping",
       desc: "We cover the cost and coffee is delivered fast. Peak freshness: guaranteed."
     }
@@ -40,7 +40,7 @@ const Chose = () => {
         <div className="chose-benefits-wrapper">
           {benefits.map((item) => (
             <div key={item.id} className="benefit-card">
-              <div className="benefit-icon">{item.icon}</div>
+              <img className="benefit-icon" src={item.icon} alt={item.title} />
               <h3 className="benefit-title">{item.title}</h3>
               <p className="benefit-desc">{item.desc}</p>
             </div>

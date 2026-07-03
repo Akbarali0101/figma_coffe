@@ -12,7 +12,7 @@ function Home() {
     <>
       <Our_collection />
       <Chose />
-      <Works/>
+      <Works isDark={false} />
     </>
   );
 }

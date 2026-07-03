@@ -1,7 +1,7 @@
 import "./Works.css"
 
 
-const Works = () => {
+const Works = ({ isDark }) => {
   const steps = [
     {
       id: "01",
@@ -21,9 +21,9 @@ const Works = () => {
   ];
 
   return (
-    <div className="works-section">
+    <div className={`works-section-light ${isDark && 'works-section-dark'}`}>
       <div className="works-container">
-        
+
         <h5 className="works-top-title">How it works</h5>
 
         {/* Tepadagi progress chizig'i (Faqat desktopda ko'rinadi) */}

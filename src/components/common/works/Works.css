@@ -1,5 +1,5 @@
 /* Tashqi umumiy fon */
-.works-section {
+.works-section-light {
   width: 100%;
   padding: 80px 20px;
   background-color: #fcfaf7;
@@ -8,9 +8,13 @@
   overflow-x: hidden;
 }
 
+.works-section-dark {
+  background-color: #333d4b;
+}
+
 /* Sariq chiziq bilan belgilangan ichki konteyner */
 .works-container {
-  width: 100%;
+  width: 1045px;
   max-width: 1110px; /* Oldingi bloklar bilan bir xil kenglik */
   display: flex;
   flex-direction: column;
