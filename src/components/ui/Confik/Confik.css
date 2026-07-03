@@ -1,0 +1,65 @@
+.confik-container {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 60px 20px;
+}
+
+.section {
+  margin-bottom: 60px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  margin-bottom: 40px;
+}
+
+.header h2 {
+  font-family: 'Fraunces', serif;
+  font-size: 32px;
+  color: #838C8B;
+}
+
+.arrow {
+  color: #0E8784;
+  transition: transform 0.3s;
+  transform: rotate(180deg);
+}
+
+.arrow.open {
+  transform: rotate(0deg);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+
+.card {
+  background: #F4F1EA;
+  padding: 40px 32px;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  min-height: 200px;
+}
+
+.card:hover {
+  background: #FDD6BA;
+}
+
+.card.active {
+  background: #0E8784;
+}
+
+.card.active h3, 
+.card.active p {
+  color: #FFFFFF;
+}
+
+@media (max-width: 768px) {
+  .grid { grid-template-columns: 1fr; }
+}
