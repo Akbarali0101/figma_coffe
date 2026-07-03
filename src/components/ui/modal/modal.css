@@ -1,0 +1,198 @@
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  z-index: 999;
+}
+
+.modal {
+  width: 540px;
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+
+  animation: modal .25s ease;
+}
+
+@keyframes modal {
+  from {
+    opacity: 0;
+    transform: translateY(-25px) scale(.96);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.modal-header {
+  background: #2c3440;
+  padding: 48px;
+}
+
+.modal-header h2 {
+  color: white;
+  font-size: 40px;
+  font-weight: 900;
+  line-height: 1.2;
+}
+
+.modal-body {
+  padding: 48px;
+}
+
+.summary {
+  font-size: 24px;
+  line-height: 42px;
+  font-weight: 700;
+  color: #83888f;
+  margin-bottom: 28px;
+}
+
+.summary span {
+  color: #0e8784;
+}
+
+.description {
+  color: #83888f;
+  font-size: 16px;
+  line-height: 28px;
+  margin-bottom: 45px;
+}
+
+.modal-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.modal-footer h3 {
+  font-size: 34px;
+  color: #333d4b;
+  font-weight: 900;
+}
+
+.modal-footer button {
+  width: 217px;
+  height: 56px;
+
+  border: none;
+  border-radius: 6px;
+
+  background: #0e8784;
+  color: white;
+
+  font-size: 18px;
+  font-weight: 700;
+
+  cursor: pointer;
+  transition: .3s;
+}
+
+.modal-footer button:hover {
+  background: #66d2cf;
+}
+@media (max-width: 768px) {
+  .modal {
+    width: 90%;
+    max-width: 540px;
+  }
+
+  .modal-header {
+    padding: 40px 32px;
+  }
+
+  .modal-body {
+    padding: 32px;
+  }
+
+  .summary {
+    font-size: 22px;
+    line-height: 38px;
+  }
+
+  .modal-footer h3 {
+    font-size: 30px;
+  }
+
+  .modal-footer button {
+    width: 180px;
+  }
+}
+@media (max-width: 576px) {
+  .modal {
+    width: calc(100% - 48px);
+    border-radius: 10px;
+  }
+
+  .modal-header {
+    padding: 28px 24px;
+  }
+
+  .modal-header h2 {
+    font-size: 28px;
+  }
+
+  .modal-body {
+    padding: 24px;
+  }
+
+  .summary {
+    font-size: 24px;
+    line-height: 40px;
+    margin-bottom: 20px;
+  }
+
+  .description {
+    font-size: 15px;
+    line-height: 28px;
+    margin-bottom: 30px;
+  }
+
+  .modal-footer {
+    display: block;
+  }
+
+  .modal-footer h3 {
+    display: none;
+  }
+
+  .modal-footer button {
+    width: 100%;
+    height: 56px;
+    font-size: 18px;
+    border-radius: 8px;
+  }
+
+  .modal-footer button::after {
+    content: " - $14.00 / mo";
+    font-weight: 700;
+  }
+}
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: rgba(0, 0, 0, 0.55);
+
+  z-index: 9999;
+}
+
+.modal {
+  width: 540px;
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* Qolgan CSS oldingi yozganimizcha qoladi */
