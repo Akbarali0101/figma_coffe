@@ -17,7 +17,7 @@
             rgba(0,0,0,.45),
             rgba(0,0,0,.1)
         ),
-        url("/bg.png");
+        url("/hero-bg/bg.png");
 
     background-size:cover;
     background-position:center;
