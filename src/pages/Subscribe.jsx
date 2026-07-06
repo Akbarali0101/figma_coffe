@@ -1,5 +1,6 @@
 import React from 'react';
 import Hero from '../components/ui/Hero/Hero';
+import Works from '../components/common/works/Works';
 import Coffeesection from '../components/ui/Coffeesection/Coffeesection';
 import PlanSelector from '../components/ui/PlanSelector/PlanSelector'; 
 import OrderForm from '../components/ui/OrderForm/OrderForm';
@@ -11,6 +12,8 @@ const Subscribe = () => {
   return (
     <div>
       < Hero/>
+      < Works isDark={true}/>
+      < Chose/>
       < Coffeesection/>
       < PlanSelector/>
       < OrderForm/>
