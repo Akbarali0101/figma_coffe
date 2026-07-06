@@ -1,32 +1,39 @@
-// Navbar komponenti - sayt boshqichi navigatsiya paneli
-// Har bir sahifaning tepagi ko'rinib turadi
-
 import "./Navbar.css";
-import { useState } from 'react';
-import logo from "../../../public/logo.png"
+import { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom'; 
 
-// Coffeeroasters Logotipi (Rangini dinamik o'zgartirish imkoniyati bilan)
+// Public papkasidagi rasmni to'g'ridan-to'g'ri chaqirish tavsiya etiladi
 const CoffeeroastersLogo = () => (
-  <img src={logo} alt="logo" width="250px" />
+  <img src="/logo.png" alt="logo" width="250px" />
 );
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
+  useEffect(() => {
+    if (isMenuOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = '';
+    }
+  }, [isMenuOpen]);
+
   return (
     <nav className="navbar-container">
       {/* Logotip qismi */}
-      <a href="/" className="navbar-logo-link">
-        <CoffeeroastersLogo fillColor="#333D4B" />
-      </a>
+      <Link to="/" className="navbar-logo-link">
+        <CoffeeroastersLogo />
+      </Link>
 
       {/* Desktop uchun menyu */}
       <div className="navbar-desktop-menu">
-        <a href="#" className="nav-link">Home</a>
-        <a href="#" className="nav-link">About Us</a>
-        <a href="#" className="nav-link">Create Your Plan</a>
+        <Link to="/" className="nav-link">Home</Link>
+        {/* XATO: to="../../pages/about-us.jsx" -> TO'G'RI: to="/about" */}
+        <Link to="/about" className="nav-link">About Us</Link>
+        {/* XATO: to="../../pages/Subscribe.jsx" -> TO'G'RI: to="/create-plan" */}
+        <Link to="/create-plan" className="nav-link">Create Your Plan</Link>
       </div>
-
+      
       {/* Mobil uchun hamburger tugmasi */}
       <button
         onClick={() => setIsMenuOpen(!isMenuOpen)}
@@ -46,11 +53,14 @@ export default function Navbar() {
         )}
       </button>
 
+      {/* Backdrop */}
+      {isMenuOpen && <div className="navbar-backdrop" onClick={() => setIsMenuOpen(false)} />}
+
       {/* Mobil qurilmalar uchun ochiladigan menyu (Drawer) */}
       <div className={`navbar-mobile-drawer ${isMenuOpen ? 'active' : ''}`}>
-        <a href="#" onClick={() => setIsMenuOpen(false)} className="mobile-nav-link">Home</a>
-        <a href="#" onClick={() => setIsMenuOpen(false)} className="mobile-nav-link">About Us</a>
-        <a href="#" onClick={() => setIsMenuOpen(false)} className="mobile-nav-link">Create Your Plan</a>
+        <Link to="/" onClick={() => setIsMenuOpen(false)} className="mobile-nav-link">Home</Link>
+        <Link to="/about" onClick={() => setIsMenuOpen(false)} className="mobile-nav-link">About Us</Link>
+        <Link to="/create-plan" onClick={() => setIsMenuOpen(false)} className="mobile-nav-link">Create Your Plan</Link>
       </div>
     </nav>
   );
