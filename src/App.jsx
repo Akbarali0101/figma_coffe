@@ -6,6 +6,7 @@ import {
 import MainLayout from "./layouts/MainLayout";
 import Home from "./pages/Home";
 import Subscribe from "./pages/Subscribe";
+import AboutUs from "./pages/about-us";
 
 const router = createBrowserRouter([
   {
@@ -17,9 +18,13 @@ const router = createBrowserRouter([
         element: <Home />,
       },
       {
-    path: "Subscribe",
-    element: <Subscribe />,
-  },
+        path: "about",
+        element: <AboutUs />,
+      },
+      {
+        path: "create-plan",
+        element: <Subscribe />,
+      },
     ],
   },
 ]);
