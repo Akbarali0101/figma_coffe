@@ -1,5 +1,11 @@
+import Header from '../components/common/Header';
+
 function Home() {
-  return <h1>Home Page</h1>;
+  return (
+    <>
+      <Header />
+    </>
+  );
 }
 
 export default Home;

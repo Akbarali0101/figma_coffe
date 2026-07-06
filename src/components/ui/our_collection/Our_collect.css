@@ -1,0 +1,152 @@
+/* Asosiy sektsiya sirtqi foni */
+.collection-section {
+  width: 100%;
+  padding: 80px 20px;
+  background-color: #fcfaf7; /* Figma umumiy oqish foni */
+  display: flex;
+  justify-content: center;
+  overflow-x: hidden;
+}
+
+/* Figma ko'k chizig'i o'lchamidagi asosiy konteyner */
+.collection-container {
+  position: relative;
+  width: 100%;
+  max-width: 1110px; /* Aynan Figmadagi 1111px o'lcham */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Orqa fondagi katta "our collection" matni */
+.collection-bg-text {
+  position: absolute;
+  top: -40px; /* Teparoqqa ko'tarish */
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: clamp(3rem, 10vw, 8.5rem); /* Ekran o'lchamiga qarab kichrayadi */
+  font-family: 'Fraunces', serif;
+  font-weight: 900;
+  color: #e2e8f0;
+  opacity: 0.4; /* Shaffoflik (xiralik) darajasi */
+  white-space: nowrap;
+  z-index: 1;
+  pointer-events: none; /* Matn ustidan sichqoncha bosilishiga xalaqit bermaydi */
+}
+
+/* Kartalarni qatorga tizish */
+.collection-grid {
+  position: relative;
+  z-index: 2; /* Orqa fondagi matn ustida turishi uchun */
+  width: 100%;
+  margin-top: 60px; /* Katta matndan pastga tushirish */
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+/* Alohida kofe kartasi */
+.coffee-card {
+  flex: 1; /* Hamma kartalar bir xil kenglikda bo'ladi */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* Kofe paketi rasmi wrapperi */
+.coffee-img-wrapper {
+  width: 100%;
+  max-width: 200px;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 24px;
+}
+
+.coffee-card-img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+/* Effekt: Kofe ustiga sichqoncha kelganda biroz ko'tariladi */
+.coffee-card:hover .coffee-card-img {
+  transform: translateY(-8px);
+}
+
+.coffee-card-info {
+  max-width: 255px; /* Matnlar juda yoyilib ketmasligi uchun */
+}
+
+/* Kofe nomi */
+.coffee-card-title {
+  font-family: 'Fraunces', serif;
+  font-size: 24px;
+  font-weight: 800;
+  color: #333d4b;
+  margin-bottom: 16px;
+}
+
+/* Kofe tavsifi */
+.coffee-card-desc {
+  font-size: 15px;
+  line-height: 1.6;
+  color: #333d4b;
+  font-weight: 400;
+}
+
+/* ================= RESPONSIVE (MEDIA QUERIES) ================= */
+
+/* Planshetlar uchun (Ekran 992px dan kichik bo'lganda) */
+@media (max-width: 992px) {
+  .collection-grid {
+    flex-direction: column; /* Kartalar yonma-yon emas, ustma-ust tushadi */
+    gap: 48px;
+    margin-top: 40px;
+  }
+
+  .coffee-card {
+    flex-direction: row; /* Mobildan farqli ravishda, planshetda rasm chapda matn o'ngda turadi */
+    text-align: left;
+    align-items: center;
+    max-width: 550px;
+    width: 100%;
+    margin: 0 auto;
+    gap: 30px;
+  }
+
+  .coffee-img-wrapper {
+    margin-bottom: 0;
+    max-width: 150px;
+    height: 150px;
+  }
+
+  .coffee-card-info {
+    max-width: 100%;
+  }
+}
+
+/* Mobil telefonlar uchun (Ekran 576px dan kichik bo'lganda) */
+@media (max-width: 576px) {
+  .collection-section {
+    padding: 40px 16px;
+  }
+
+  .collection-bg-text {
+    top: -20px;
+  }
+
+  .coffee-card {
+    flex-direction: column; /* Telefonlarda yana to'liq markazlashgan ustun holatiga qaytadi */
+    text-align: center;
+    gap: 16px;
+  }
+
+  .coffee-img-wrapper {
+    max-width: 180px;
+    height: 180px;
+  }
+}
