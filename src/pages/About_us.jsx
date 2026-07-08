@@ -1,9 +1,9 @@
-import { Commitment } from "../components/ui/commitment — копия/commitment";
+import { Commitment } from "../components/ui/commitment/commitment";
 import { Head } from "../components/ui/head — копия/Head";
-import { Quality } from "../components/ui/quality — копия/Quality";
+import { Quality } from "../components/ui/quality/Quality";
 
 
-function About_us() {
+function About() {
   return (
     <>
       <Commitment />
@@ -13,4 +13,4 @@ function About_us() {
   );
 }
 
-export default About_us;
+export default About;

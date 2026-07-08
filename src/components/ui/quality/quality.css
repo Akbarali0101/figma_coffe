@@ -1,0 +1,29 @@
+.back{
+ max-width: 1110px;
+    height: 474px;
+    margin: 200px auto;
+    background: #2C343E;
+    border-radius: 10px;
+    position: relative;
+
+}
+.image{
+     position: absolute;
+    top: -80px;
+    right: 85px;
+
+}
+.text{
+    
+    width: 500px;
+    padding: 50px 55px;
+    color: white;
+
+ }
+
+.image img{
+     width: 445px;
+    height: 474px;
+    object-fit: cover;
+    border-radius: 10px;
+}

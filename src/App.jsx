@@ -5,8 +5,8 @@ import {
 
 import MainLayout from "./layouts/MainLayout";
 import Home from "./pages/Home";
-import About_us from "./pages/about_us";
 import Subscribe from "./pages/Subscribe";
+import About from "./pages/about_us";
 
 const router = createBrowserRouter([
   {
@@ -18,11 +18,11 @@ const router = createBrowserRouter([
         element: <Home />,
       },
       {
-        path: "/about",
-        element: <About_us />,
+        path: "about",
+        element: <About />,
       },
       {
-        path: "Subscribe",
+        path: "subscribe",
         element: <Subscribe />,
       },
     ],
