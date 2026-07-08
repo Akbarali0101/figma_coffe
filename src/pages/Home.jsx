@@ -8,7 +8,7 @@ function Home() {
   return (
     <>
       {/* <Header /> */}
-      <Hero backgroundImage="/hero-bg/bg1.png" />
+      <Hero backgroundImage="/hero-bg/bg.png" />
       <Our_collection />
       <Chose />
       <Works isDark={false} />

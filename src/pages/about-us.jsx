@@ -4,7 +4,7 @@ import Header from '../components/common/Header';
 const AboutUs = () => {
   return (
     <div className="about-us-page">
-      <Header backgroundImage="/hero-bg/image.png"/>
+      <Header backgroundImage="/hero-bg/object.png"/>
       <section className="about-hero">
         <div className="about-hero-content">
           <h1>About Our Coffee Company</h1>
