@@ -10,25 +10,25 @@ const Collection = () => {
       id: 1,
       name: 'Gran Espresso',
       desc: 'Light and flavorful blend with cocoa and black pepper for an intense experience',
-      img: './public/img/1.png' // public/img/ ichidagi rasm nomi
+      img: '/img/1.png'
     },
     {
       id: 2,
       name: 'Planalto',
       desc: 'Brazilian dark roast with rich and velvety body, and hints of fruits and nuts',
-      img: './public/img/planalto.png'
+      img: '/img/planalto.png'
     },
     {
       id: 3,
       name: 'Piccollo',
       desc: 'Mild and smooth blend featuring notes of toasted almond and dried cherry',
-      img: './public/img/3.png'
+      img: '/img/3.png'
     },
     {
       id: 4,
       name: 'Danche',
       desc: 'Ethiopian hand-harvested blend densely packed with vibrant fruit notes',
-      img: './public/img/4.png'
+      img: '/img/4.png'
     }
   ];
 

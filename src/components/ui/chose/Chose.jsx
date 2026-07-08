@@ -4,19 +4,19 @@ const Chose = () => {
   const benefits = [
     {
       id: 1,
-      icon: "./public/img/birinchi.svg", // Bu yerga keyinchalik o'z SVG yoki rasmingizni qo'yishingiz mumkin
+      icon: "/img/birinchi.svg", // Bu yerga keyinchalik o'z SVG yoki rasmingizni qo'yishingiz mumkin
       title: "Best quality",
       desc: "Discover an endless variety of the world's best artisan coffee from each of our roasters."
     },
     {
       id: 2,
-      icon: "./public/img/ikki.svg",
+      icon: "/img/ikki.svg",
       title: "Exclusive benefits",
       desc: "Special offers and swag when you subscribe, including 30% off your first shipment."
     },
     {
       id: 3,
-      icon: "./public/img/logo.svg",
+      icon: "/img/logo.svg",
       title: "Free shipping",
       desc: "We cover the cost and coffee is delivered fast. Peak freshness: guaranteed."
     }
