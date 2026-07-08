@@ -1,4 +1,3 @@
-import Header from "../components/common/Header/Header";
 // import Hero from '../components/ui/Hero/Hero';
 import Works from "../components/common/works/Works";
 import Coffeesection from "../components/ui/Coffeesection/Coffeesection";
@@ -8,6 +7,7 @@ import Confik from "../components/ui/Confik/Confik";
 import Deliver from "../components/ui/Deliver/Deliver";
 import Beat from "../components/ui/Beat/Beat";
 import Chose from "../components/ui/chose/Chose";
+import { Header } from "../components/common/Header/Header";
 
 const Subscribe = () => {
   return (
