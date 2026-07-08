@@ -1,6 +1,9 @@
 import './NotFound.css';
+import { useNavigate } from 'react-router-dom';
 
 const NotFound = () => {
+  const navigate = useNavigate();
+
   return (
     <div className="not-found-container">
       {/* Background elements */}
@@ -79,10 +82,10 @@ const NotFound = () => {
 
           {/* Buttons */}
           <div className="button-container">
-            <button className="btn-primary">
+            <button className="btn-primary" onClick={() => navigate('/')}>
               <span className="button-icon">☕</span> Back to Home
             </button>
-            <button className="btn-secondary">
+            <button className="btn-secondary" onClick={() => navigate('/subscribe')}>
               <span className="button-icon">📖</span> Browse Menu
             </button>
           </div>
