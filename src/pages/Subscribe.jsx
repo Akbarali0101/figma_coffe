@@ -7,7 +7,7 @@ import OrderForm from '../components/ui/OrderForm/OrderForm';
 import Confik from '../components/ui/Confik/Confik';
 import Deliver from '../components/ui/Deliver/Deliver';
 import Beat from '../components/ui/Beat/Beat';
-import Chose from '../components/ui/chose/Chose';
+
 
 const Subscribe = () => {
   return (
@@ -15,7 +15,7 @@ const Subscribe = () => {
       <Header backgroundImage="/hero-bg/Object.png"/>
       {/* <Hero/> */}
       <Works isDark={true}/>
-      <Chose/>
+      
       <Coffeesection/>
       <PlanSelector/>
       <OrderForm/>
