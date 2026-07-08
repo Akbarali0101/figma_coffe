@@ -28,10 +28,8 @@ export default function Navbar() {
       {/* Desktop uchun menyu */}
       <div className="navbar-desktop-menu">
         <Link to="/" className="nav-link">Home</Link>
-        {/* XATO: to="../../pages/about-us.jsx" -> TO'G'RI: to="/about" */}
         <Link to="/about" className="nav-link">About Us</Link>
-        {/* XATO: to="../../pages/Subscribe.jsx" -> TO'G'RI: to="/create-plan" */}
-        <Link to="/create-plan" className="nav-link">Create Your Plan</Link>
+        <Link to="/Subscribe" className="nav-link">Create Your Plan</Link>
       </div>
       
       {/* Mobil uchun hamburger tugmasi */}
