@@ -1,11 +1,13 @@
 /* Tashqi umumiy fon */
 .works-section-light {
-  width: 100%;
+  width: 80%;
   padding: 80px 20px;
-  background-color: #fcfaf7;
+  background-color: #fff;
   display: flex;
   justify-content: center;
   overflow-x: hidden;
+  margin-left: 185px;
+  border-radius: 10px;
 }
 
 .works-section-dark {

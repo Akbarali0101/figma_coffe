@@ -1,3 +1,4 @@
+
 import Navbar from "../components/common/Navbar";
 import Header from "../components/common/Header";
 import Chose from "../components/ui/chose/Chose";
