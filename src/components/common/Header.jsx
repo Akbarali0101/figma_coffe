@@ -1,10 +1,12 @@
 import "./Header.css";
 
-const CoffeeroastersLogo = () => (
-  <img src="/logo.png" alt="logo" width="250px" />
-);
-
-export default function Header({ backgroundImage = "/hero-bg/bg.png" }) {
+export default function Header({ 
+  title, 
+  description, 
+  backgroundImage = "/hero-bg/home.png", 
+  showButton = false 
+}) {
+  
   const headerStyle = {
     backgroundImage: `linear-gradient(
         to right,
@@ -19,16 +21,10 @@ export default function Header({ backgroundImage = "/hero-bg/bg.png" }) {
     <header className="header-wrapper">
       <div className="header-box" style={headerStyle}>
         <div className="header-content">
-          <CoffeeroastersLogo />
-          <h1>Great coffee made simple.</h1>
-
-          <p>
-            Start your mornings with the world's best coffees. Try our expertly
-            curated artisan coffees from our best roasters delivered directly to
-            your door, at your schedule.
-          </p>
-
-          <button>Create your plan</button>
+          {/* Logotip rasmdagidek bu yerga qo'yilmaydi, u alohida Navbarda bo'lishi kerak */}
+          <h1>{title}</h1>
+          <p>{description}</p>
+          {showButton && <button>Create your plan</button>}
         </div>
       </div>
     </header>

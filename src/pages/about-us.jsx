@@ -1,17 +1,22 @@
-import React from 'react';
-import Header from '../components/common/Header';
+import Header from "../components/common/Header";
 
 const AboutUs = () => {
   return (
     <div className="about-us-page">
-      <Header backgroundImage="/hero-bg/object.png"/>
+      <Header
+        title="About Us"
+        description="Coffeeroasters began its journey of exotic discovery in 1999, highlighting stories of coffee from around the world. We have since been dedicated to bring the perfect cup - from bean to brew - in every shipment."
+        backgroundImage="/hero-bg/about.png"
+        showButton={false}
+      />
       <section className="about-hero">
         <div className="about-hero-content">
           <h1>About Our Coffee Company</h1>
           <p>
-            We are passionate about bringing the finest artisan coffees from around
-            the world directly to your cup. Our journey began with a simple mission:
-            to share exceptional coffee experiences with everyone.
+            We are passionate about bringing the finest artisan coffees from
+            around the world directly to your cup. Our journey began with a
+            simple mission: to share exceptional coffee experiences with
+            everyone.
           </p>
         </div>
       </section>
@@ -22,11 +27,13 @@ const AboutUs = () => {
           <p>
             Founded by coffee enthusiasts who believed that everyone deserves
             access to exceptional, ethically sourced coffee, we've grown from a
-            small roastery to a beloved coffee supplier serving customers nationwide.
+            small roastery to a beloved coffee supplier serving customers
+            nationwide.
           </p>
           <p>
-            We travel the world to build direct relationships with coffee farmers,
-            ensuring fair wages and sustainable practices throughout our supply chain.
+            We travel the world to build direct relationships with coffee
+            farmers, ensuring fair wages and sustainable practices throughout
+            our supply chain.
           </p>
         </div>
       </section>
