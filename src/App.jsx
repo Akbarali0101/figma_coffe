@@ -6,7 +6,7 @@ import {
 import MainLayout from "./layouts/MainLayout";
 import Home from "./pages/Home";
 import Subscribe from "./pages/Subscribe";
-import AboutUs from "./pages/about-us";
+import About from "./pages/about_us";
 
 const router = createBrowserRouter([
   {
@@ -19,10 +19,10 @@ const router = createBrowserRouter([
       },
       {
         path: "about",
-        element: <AboutUs />,
+        element: <About />,
       },
       {
-        path: "create-plan",
+        path: "subscribe",
         element: <Subscribe />,
       },
     ],
