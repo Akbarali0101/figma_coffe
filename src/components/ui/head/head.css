@@ -1,6 +1,8 @@
 .headquarters {
-    max-width: 1045px;
-    margin: 170px auto;
+    max-width: 1110px;
+    margin: 160px auto;
+    padding: 0 20px;
+    box-sizing: border-box;
 }
 
 .headquarters h4 {
@@ -12,10 +14,11 @@
 .headquarters-box {
     display: flex;
     justify-content: space-between;
+    gap: 40px;
 }
 
 .country {
-    width: 285px;
+    flex: 1;
 }
 
 .country img {
@@ -34,4 +37,64 @@
     color: #333D4B;
     font-size: 16px;
     line-height: 26px;
+}
+@media (max-width: 992px) {
+
+    .headquarters {
+        margin: 120px auto;
+    }
+
+    .headquarters-box {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 50px;
+    }
+
+    .country {
+        flex: 0 0 calc(50% - 25px);
+        max-width: 320px;
+    }
+
+    .country h2 {
+        font-size: 28px;
+    }
+
+    .country p {
+        font-size: 15px;
+    }
+}
+@media (max-width: 768px) {
+
+    .headquarters {
+        margin: 80px auto;
+        text-align: center;
+    }
+
+    .headquarters h4 {
+        margin-bottom: 50px;
+    }
+
+    .headquarters-box {
+        flex-direction: column;
+        align-items: center;
+        gap: 60px;
+    }
+
+    .country {
+        width: 100%;
+        max-width: 320px;
+    }
+
+    .country img {
+        margin-bottom: 30px;
+    }
+
+    .country h2 {
+        font-size: 26px;
+    }
+
+    .country p {
+        font-size: 15px;
+        line-height: 24px;
+    }
 }

@@ -1,6 +1,6 @@
 import { Commitment } from "../components/ui/commitment/commitment";
+import { Head } from "../components/ui/head/head";
 import { Quality } from "../components/ui/quality/Quality";
-import { Head } from "../components/ui/head/Head";
 
 
 function About() {
