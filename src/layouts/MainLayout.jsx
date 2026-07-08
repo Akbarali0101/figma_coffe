@@ -8,9 +8,11 @@ function MainLayout() {
 
   return (
     <>
+    <div className="container">
       <Navbar />
       <Outlet />
       <Footer />
+    </div>
     </>
 
   );

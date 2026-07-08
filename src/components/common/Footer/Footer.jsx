@@ -3,7 +3,7 @@ import "./Footer.css";
 import { Link } from 'react-router-dom'; 
 
 const CoffeeroastersWhiteLogo = () => (
-  <img src="../../../public/logo-white.png" alt="" width="300px" />
+  <img src="/logo-white.png" alt="" width="300px" />
 );
 
 export default function Footer() {

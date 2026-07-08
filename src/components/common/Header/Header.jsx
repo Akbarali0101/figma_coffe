@@ -1,6 +1,6 @@
 import "./Header.css";
 
-export default function Header({ 
+export function Header({ 
   title, 
   description, 
   backgroundImage = "/hero-bg/home.png", 

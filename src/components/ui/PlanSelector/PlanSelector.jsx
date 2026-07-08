@@ -1,8 +1,8 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import './PlanSelector.css';
 
 const PlanSelector = () => {
-  const [isOpenPreferences, setIsOpenPreferences] = useState(true);
+  // const [isOpenPreferences, setIsOpenPreferences] = useState(true);
   const [isOpenBeanType, setIsOpenBeanType] = useState(true);
 
   const [selectedCards, setSelectedCards] = useState({
@@ -10,11 +10,11 @@ const PlanSelector = () => {
     beanType: 'Decaf'
   });
 
-  const preferencesCards = [
-    { title: 'Capsule', desc: 'Compatible with Nespresso systems and similar brewers' },
-    { title: 'Filter', desc: 'For pour over or drip methods like Aeropress, Chemex, and V60' },
-    { title: 'Espresso', desc: 'Dense and finely ground beans for an intense, flavorful experience' }
-  ];
+  // const preferencesCards = [
+  //   { title: 'Capsule', desc: 'Compatible with Nespresso systems and similar brewers' },
+  //   { title: 'Filter', desc: 'For pour over or drip methods like Aeropress, Chemex, and V60' },
+  //   { title: 'Espresso', desc: 'Dense and finely ground beans for an intense, flavorful experience' }
+  // ];
 
   const beanTypeCards = [
     { title: 'Single Origin', desc: 'Distinct, high quality coffee from a specific family-owned farm' },

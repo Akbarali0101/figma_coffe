@@ -1,7 +1,7 @@
 import { Commitment } from "../components/ui/commitment/commitment";
 import { Head } from "../components/ui/head/Head";
 import { Quality } from "../components/ui/quality/Quality";
-import Header from "../components/common/Header/Header";
+import {Header} from "../components/common/Header/Header";
 
 function About() {
   return (
