@@ -1,4 +1,3 @@
-import React from "react";
 import "./Our_collect.css";
 
 

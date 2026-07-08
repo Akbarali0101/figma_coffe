@@ -6,7 +6,7 @@ import {
 import MainLayout from "./layouts/MainLayout";
 import Home from "./pages/Home";
 import Subscribe from "./pages/Subscribe";
-import About from "./pages/about_us";
+import About from './pages/About_us';
 
 const router = createBrowserRouter([
   {
