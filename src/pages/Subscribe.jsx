@@ -1,4 +1,4 @@
-import Header from "../components/common/Header";
+import Header from "../components/common/Header/Header";
 // import Hero from '../components/ui/Hero/Hero';
 import Works from "../components/common/works/Works";
 import Coffeesection from "../components/ui/Coffeesection/Coffeesection";

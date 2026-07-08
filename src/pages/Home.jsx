@@ -1,4 +1,4 @@
-import Header from "../components/common/Header"; // 1. Add this missing import
+import Header from "../components/common/Header/Header"; // 1. Add this missing import
 import Chose from "../components/ui/chose/Chose";
 import Our_collection from "../components/ui/our_collection/Our_collect";
 import Works from "../components/common/works/Works";
